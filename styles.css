@@ -138,11 +138,14 @@ body {
 
 .landing-content {
   isolation: isolate;
+  pointer-events: none;
   position: relative;
   width: 100%;
   max-width: 760px;
   text-align: center;
   transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .landing-content::before,
@@ -251,6 +254,7 @@ body {
   font-size: clamp(1rem, 1.6vw, 1.3rem);
   font-weight: 700;
   letter-spacing: 0.18em;
+  pointer-events: none;
   text-shadow:
     0 0 8px rgba(255, 96, 0, 0.38),
     0 5px 16px rgba(0, 0, 0, 0.95);
@@ -295,13 +299,17 @@ body {
   margin: 0;
   max-width: 100%;
   color: rgba(255, 255, 255, 0.58);
+  cursor: default;
   font-size: clamp(0.58rem, 1.8vw, 0.72rem);
   font-weight: 500;
   line-height: 1.35;
   overflow: hidden;
+  pointer-events: none;
   text-overflow: clip;
   white-space: nowrap;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.95);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 @keyframes landing-ember-drift {
