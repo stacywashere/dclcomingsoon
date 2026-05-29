@@ -132,8 +132,9 @@ body {
   z-index: 10;
   display: flex;
   min-height: 100vh;
-  align-items: center;
-  padding: 2.5rem 1.25rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(3rem, 8vh, 6rem) 1.25rem 2.5rem;
 }
 
 .landing-content {
@@ -352,16 +353,12 @@ body {
 
 @media (min-width: 1024px) {
   .landing-section {
-    align-items: flex-start;
-    justify-content: flex-end;
     padding-right: 4rem;
     padding-left: 4rem;
-    padding-top: 10vh;
   }
 
   .landing-content {
-    margin-right: 1vw;
-    transform: translate(2vw, 4vh);
+    transform: none;
   }
 
   .landing-pliers {
@@ -374,12 +371,10 @@ body {
   .landing-section {
     padding-right: 6rem;
     padding-left: 6rem;
-    padding-top: 9.5vh;
   }
 
   .landing-content {
-    margin-right: 3vw;
-    transform: translate(1vw, 4.5vh);
+    transform: none;
   }
 }
 
